@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+    It tells the browser how to control the page's dimensions and scaling.
+
+    There are also many other head tags available. Some more important than others.
+    https://www.w3schools.com/html/html_head.asp
+  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ant Man</title>
+
+    <!-- Exercise 1.1 -->
+    <!-- load the styles -->
+    <link rel="stylesheet" href="/Lab-4/styles.css" />
+  </head>
+
+  <body>
+    <!-- NEW! The header with the nav has been added here. Notice that the paths are different than the ones you have in the main index.html page -->
+    <header id="header">
+      <nav>
+        <ul class="hero-list">
+          <!-- Link to homepage -->
+          <li><a href="../../index.html">Home page</a></li>
+          <!-- Link to Ant-Man page (NEW! same tab now and different path)-->
+          <li>
+            <a href="../ant-man/index.html">Ant-man</a>
+          </li>
+          <!-- Link to Groot page (NEW! same tab now and different path)-->
+          <li><a href="../groot/index.html">Groot</a></li>
+          <!-- Link to Rocket Racoon page (NEW! same tab now and different path)-->
+          <li><a href="../rocket-racoon/index.html">Rocket Racoon</a></li>
+          <!-- Link to Iron Man page (NEW! same tab now and different path)-->
+          <li><a href="../iron-man/index.html">Iron Man</a></li>
+          <!-- Link to Hulk page (NEW! same tab now and different path)-->
+          <li><a href="../hulk/index.html">Hulk</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--
+    Link to the homepage. It loads the page in the same tab
+    By adding the "../" in a link tells it to look for the file, in the folder outside the one this file is in.
+  -->
+    <!-- We no longer need the homepage link. Not it is part of the nav meny-->
+    <!-- Delete this... <a href="../../index.html">Homepage</a> -->
+
+    <main>
+      <article>
+        <h1>Ant Man</h1>
+
+        <!-- Exercise 1.2 -->
+        <!-- Insert class in the div underneath-->
+        <div class="card">
+          <!-- Left class -->
+          <div class="left">
+            <!--
+            The figure element represents a unit of content, optionally with a caption, that is self-contained, this usually is an image with some caption attached.
+
+            The figcaption element is optional and can be used before or after the content within the <figure>.
+            Only one <figcaption> element may be nested within a <figure>, but the element itself may contain multiple other child elements (e.g., <img> or <code>).
+
+            Read about it in an article explaining it. http://html5doctor.com/the-figure-figcaption-elements/
+
+            Or to see how its used on w3school:
+            https://www.w3schools.com/Tags/tag_figure.asp
+            https://www.w3schools.com/Tags/tag_figcaption.asp
+          -->
+            <figure>
+              <img
+                src="../../img/ant-man-landscape_incredible.jpg"
+                alt="Ant-Man wearing his suit"
+              />
+              <figcaption>Ant-Man (comic version) wearing his suit</figcaption>
+            </figure>
+          </div>
+
+          <!-- Right class -->
+          <div class="right">
+            <p>
+              A good man with a criminal past, Scott Lang builds upon the legacy
+              of one of the founding Avengers as the size-changing hero Ant-Man.
+            </p>
+          </div>
+        </div>
+
+        <!-- Exercise 1.3 -->
+        <!-- Insert class in the div underneath -->
+        <div class="card2">
+          <p>From the Big House to the Ant Farm</p>
+
+          <p>
+            Desperate to provide for his family, but unable to make ends meet,
+            electronics genius Scott Lang turned to burglary and inadvertently
+            won himself a prison sentence. After being released early for good
+            behavior, he knuckled down to raise his daughter Cassie, though soon
+            discovered nothing had changed with his luck and fortunes. When
+            Cassie fell ill from a devastating heart ailment and her surgeon was
+            abducted by a mysterious wealthy man, Lang reluctantly returned to
+            his life of crime in an effort to save his daughter’s life.
+          </p>
+
+          <p>
+            Assuming scientist Hank Pym’s home might offer expensive equipment
+            to pawn for cash, Lang broke in, but discovered something far more
+            valuable—unbeknownst to him, he was staring his future in the face.
+            He left the home with Pym’s old Ant-Man gear and uniform, left over
+            from the scientist’s early days as a Super Hero with the Avengers,
+            and set out to use it to rescue Cassie’s surgeon.
+          </p>
+        </div>
+
+        <!-- 
+        This information is only tangentially related to the content.
+        The <aside> tag defines some content aside from the content it is placed in (https://www.w3schools.com/tags/tag_aside.asp)
+        this means that this aside belongs to the article. Therefore, the contents of the aside are indirectly related to the article.
+        This article is about a hero. The best friend of the hero is only an additional piece of information.
+      -->
+        <!-- Exercise 1.4 -->
+        <!-- Insert class in the div underneath -->
+        <aside class="info">
+          <!-- 
+          We could technically use an h1 here, but it might have a negative impact on SEO. 
+          We try to have only 1 h1 per page. However, With semantic HTML, it is technically possible to have 
+          several h1 per section.
+        -->
+          <h2>Ant man's best friend</h2>
+          <p>My best friend is &hellip;</p>
+          <figure>
+            <!--
+            Similarly as explained above, you can have as many tags inside it as you want, but only one <figcaption>
+            Clicking on the picture will open the character's page in the same tab.
+            Almost anything can be used as a link, however, you have a couple of limitations.
+            Links and anchors defined by the A element must not be nested; an A element must not contain any other A elements.
+          -->
+            <a href="../iron-man/index.html">
+              <img
+                src="../../img/iron-man-standard_small.jpg"
+                alt="Iron man small portrait"
+              />
+            </a>
+            <figcaption>Iron Man</figcaption>
+          </figure>
+        </aside>
+      </article>
+    </main>
+
+    <!-- This footer belongs to the page. We can have footer inside other sections or articles. -->
+    <footer class="copyright">
+      <hr />
+      <!--
+      Some characters are reserved in HTML.
+      If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+      Character entities are used to display reserved characters in HTML.
+
+      You can see some of the ones available here:
+      https://www.w3schools.com/html/html_entities.asp
+
+      look here for an even larger list: https://dev.w3.org/html5/html-author/charref
+    -->
+      &copy; All the images and texts were taken from
+      <a href="https://www.marvel.com/characters"> Marvel site </a>
+    </footer>
+  </body>
+</html>

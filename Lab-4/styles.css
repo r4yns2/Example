@@ -1,0 +1,76 @@
+#header {
+  background-color: black;
+  font-size: 1.5em;
+}
+
+#header ul {
+  display: inline-block;
+}
+
+#header ul > li {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+#header ul > li::first-letter {
+  font-weight: bold;
+  color: yellow;
+}
+
+#header a {
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 2%;
+}
+
+main > * article > * {
+  margin: 20px 0;
+}
+
+.card {
+  background-color: white;
+  border: solid 1px black;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 7px, 7px, 10px, 3px darkgray;
+}
+.card2 {
+  background-color: white;
+  border: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 7px, 7px, 10px, 3px darkgray;
+  text-align: justify;
+  padding: 5px;
+}
+
+figure {
+  width: 100%;
+}
+
+.left {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  vertical-align: middle;
+}
+.right {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  vertical-align: middle;
+}
+.info {
+  text-align: justify;
+  padding: 5px;
+}
